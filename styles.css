@@ -251,3 +251,8 @@ footer .logo{display:inline-block;margin-bottom:24px}
 .gal-head p{font-size:20px;line-height:28px;color:var(--grey);margin-top:12px}
 .credit{display:inline-block;margin-top:20px;background:var(--sand);border-radius:99px;padding:10px 20px;font-size:16px;line-height:22px;color:var(--grey)}
 .credit b{color:var(--ink);font-weight:500}
+.gal .row.three{grid-template-columns:repeat(3,1fr);gap:16px}
+.gal.spaced .row.three img{border-radius:14px;box-shadow:0 10px 30px rgba(42,49,50,.08);transition:transform .5s var(--spring)}
+.gal.spaced .row.three img:hover{transform:translateY(-6px) scale(1.02)}
+.gal-head + .row{margin-top:0}
+@media (max-width:560px){.gal .row.three{grid-template-columns:1fr 1fr}}
