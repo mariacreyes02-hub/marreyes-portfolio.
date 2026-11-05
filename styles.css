@@ -256,3 +256,19 @@ footer .logo{display:inline-block;margin-bottom:24px}
 .gal.spaced .row.three img:hover{transform:translateY(-6px) scale(1.02)}
 .gal-head + .row{margin-top:0}
 @media (max-width:560px){.gal .row.three{grid-template-columns:1fr 1fr}}
+
+/* ---------- ad boards (one section per brand) ---------- */
+.board{border-radius:28px;padding:56px 40px 44px;margin-top:28px;overflow:hidden}
+.board:first-child{margin-top:0}
+.board-head{display:flex;align-items:baseline;justify-content:space-between;gap:32px;margin-bottom:32px}
+.board-head h3{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(36px,3.6vw,52px);letter-spacing:-1.5px;margin:0}
+.board-head p{font-size:17px;line-height:24px;max-width:420px;text-align:right;opacity:.8}
+.board-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.board-grid img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:12px;box-shadow:0 12px 28px rgba(0,0,0,.18);transition:transform .5s var(--spring),box-shadow .4s}
+.board-grid img:hover{transform:translateY(-8px) scale(1.04);box-shadow:0 22px 40px rgba(0,0,0,.25);position:relative;z-index:2}
+.board-brick{background:#e9ecef;color:#14181c}
+.board-alix{background:#13213d;color:#f2ede4}
+.board-trovy{background:#ffd84a;color:#1d1a12}
+@media (max-width:860px){.board{padding:36px 18px 24px;border-radius:20px}.board-head{flex-direction:column;gap:8px}.board-head p{text-align:left}.board-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:560px){.board-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1340px){.gal .board{margin-left:-120px;margin-right:-120px}}
